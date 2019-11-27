@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    color: rgb(129, 144, 165);
+    line-height: 1.5;
+    text-size-adjust: .1em;
+}
+
+h1, h2, h3 {
+    color: rgb(71, 82, 94);
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    background-color: white;
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color .3s;
+    z-index: 10;
+}
+
+nav > a {
+    align-self: center;
+    margin: auto 10px;
+    color: rgb(71, 82, 94);
+}
+
+nav > a:hover {
+    color: rgb(122, 161, 136);
+} 
+
+.scroll {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+#pineapple {
+    position: relative;
+    left: -30vw;
+    z-index: 5;
+    height: 100vh;
+}
+
+.intro {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* funky way to do this please look into it */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.two-columns {
+    background-color: rgb(166, 193, 178);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.two-columns > div {
+    width: 300px;
+    text-align: right;
+}
+
+.about-text p, .about-text h1 {
+    color: white;
+}
+
+#me {
+    height: 250px;
+    margin: 50px;
+}
+
+.centered-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.three-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.three-rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.three-column-item {
+    min-width: 250px;
+    max-width: 350px;
+    padding: 2vw;
+}
+
+#knitting-pic, #cat-pic, #climbing-pic {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.picture-highlight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw;
+}
+
+#game-pic {
+    width: 40vw;
+    height: auto;
+}
+
+#text-games {
+    background-color: white;
+    padding: 40px;
+    max-width: 400px;
+    position: relative;
+    left: -70px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    background-color: rgb(122, 161, 136);
+    height: 100px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > a {
+    align-self: center;
+    margin: auto 10px;
+    color: white;
+}
+
+#tiny-pineapple {
+    height: 120%;
+    position: relative;
+    top: -40px;
+    left: -65vw;
+}
+
+main > div {
+    padding: 20px;
+}
