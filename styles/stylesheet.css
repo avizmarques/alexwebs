@@ -62,11 +62,19 @@ nav > a:hover {
     background-color: rgba(255, 255, 255, .8);
 }
 
-#pineapple {
+.pineapple {
     position: relative;
     left: -30vw;
     z-index: 5;
     height: 100vh;
+}
+
+.resized-pineapple {
+    position: relative;
+    left: -30vw;
+    top: 40vh;
+    z-index: 5;
+    height: 50vh;
 }
 
 .intro {
@@ -74,28 +82,28 @@ nav > a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* funky way to do this please look into it */
+    transform: translate(-50%, -50%);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     padding-bottom: 70px;
 }
 
-.two-columns {
-    background-color: rgb(166, 193, 178);
-    width: 100%;
+.flex-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+} 
+
+#about {
+    background-color: rgb(166, 193, 178);
     padding: 50px 0px;
+    align-items: center;
 }
 
-.two-columns > div {
+#about > div {
     width: 300px;
     text-align: right;
 }
@@ -115,26 +123,18 @@ main {
     text-align: center;
 }
 
-.three-columns {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-}
-
-.three-rows {
+.flex-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
     width: 100%;
 }
 
-.three-column-item {
+.flex-item {
     min-width: 250px;
     max-width: 350px;
-    padding: 2vw;
+    padding: 6vh 2vw;
 }
 
 #knitting-pic, #cat-pic, #climbing-pic {
@@ -142,23 +142,20 @@ main {
     margin-bottom: 20px;
 }
 
-.picture-highlight {
-    display: flex;
-    flex-direction: row;
+#games {
+    padding: 2vh 0;
     align-items: center;
-    justify-content: center;
-    padding: 2vh 2vw;
 }
 
 #game-pic {
-    width: 40vw;
+    width: 50%;
     height: auto;
 }
 
 #text-games {
     background-color: white;
     padding: 40px;
-    max-width: 400px;
+    max-width: 350px;
     position: relative;
     left: -70px;
 }
@@ -179,15 +176,4 @@ footer > a {
     align-self: center;
     margin: auto 10px;
     color: white;
-}
-
-#tiny-pineapple {
-    height: 120%;
-    position: relative;
-    top: -40px;
-    left: -65vw;
-}
-
-main > div {
-    padding: 20px;
 }

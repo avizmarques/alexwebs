@@ -14,14 +14,14 @@
             <a href="#about">about</a>
             <a href="#favourite-intro">favourite things</a>
         </nav>
-        <img id="pineapple" src="images/pineappleclear2.png">
+        <img class="pineapple" id="big-pineapple" src="images/pineappleclear2.png">
         <div class="intro">
             <h1>Hi, I'm Alex</h1>
             <p>(pineapple unrelated)</p>
         </div>
     </header>
     <main>
-        <section class="two-columns" id="about">
+        <section class="flex-row" id="about">
             <div class="about-text">
                 <h1>Hi, I'm Alex</h1>
                 <p>I'm from Portugal and I studied Pharmaceutical Sciences.
@@ -36,8 +36,8 @@
                 <p>Below you can read about my favorite things!</p>
             </div>
         </section>
-        <section class="three-columns" id="favourite-items">
-            <div class="three-column-item" id="knitting">
+        <section class="flex-row" id="favourite-things">
+            <div class="flex-item" id="knitting">
                 <img id="knitting-pic" src="images/knitting.jpg">
                 <h1>Knitting</h1>
                 <p>In my free time I enjoy knitting. I find it relaxing and I like that I can watch series or
@@ -46,14 +46,14 @@
                     but those things suck because they are not sweaters.
                 </p>
             </div>
-            <div class="three-column-item" id="cats">
+            <div class="flex-item" id="cats">
                 <img id="cat-pic" src="images/kitties.jpg">
                 <h1>Cats</h1>
                 <p>I'm a bit of a crazy cat lady.
-                    These two are my furrballs, Elizabeth and William.
+                    These two are my furrballs, Willy and Ellie.
                 </p>
             </div>
-            <div class="three-column-item" id="climbing">
+            <div class="flex-item" id="climbing">
                 <img id="climbing-pic" src="images/bouldering.jpg">
                 <h1>Climbing</h1>
                 <p>Climbing is really fun, I suck at it but still enjoy it. 
@@ -65,22 +65,23 @@
                 </p>
             </div>
         </section>
-        <section class="picture-highlight" id="games">
-            <img id="game-pic" src="images/linkpineapple.jpg" height=400px>
-            <div id="text-games">
-                <h1>Games</h1>
-                <p>I like both video games and board games. My favorite video games include
-                    Legend of Zelda, Witcher and Skyrim. My favorite board games are 
-                    Dungeons & Dragons, Pandemic Legacy, Concordia and Bargain Quest.
-                </p>
+        <section class="flex-row" id="highlight">
+            <div class="flex-item" id="games">
+                <img id="game-pic" src="images/linkpineapple.jpg" height=400px>
+                <div id="text-games">
+                    <h1>Games</h1>
+                    <p>I like both video games and board games. My favorite video games include
+                        Legend of Zelda, Witcher and Skyrim. My favorite board games are 
+                        Dungeons & Dragons, Gloomhaven, Concordia and Bargain Quest.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <!-- <img id="tiny-pineapple" src="images/pineappleclear.png"> -->
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact me</a>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="mailto:aviz.marques@gmail.com">Contact me</a>
     </footer>
     <script src="scripts/script.js"></script>
 </body>
